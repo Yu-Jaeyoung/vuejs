@@ -4,7 +4,7 @@
 			<slot name="header" header-message="헤더 메시지"></slot>
 		</div>
 		<div v-if="$slots.default" class="card-body">
-			<slot name="default" child-message="childMessage" hello-message="하이">
+			<slot name="default" :child-message="childMessage" hello-message="하이">
 			</slot>
 		</div>
 		<div v-if="hasFooter" class="card-footer">
